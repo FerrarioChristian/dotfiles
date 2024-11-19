@@ -1,0 +1,6 @@
+[user]
+        email = chri.fer.emi@gmail.com
+        name = FerrarioChristian
+[core]
+        editor = nvim
+        autocrlf = true
