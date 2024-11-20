@@ -3,4 +3,7 @@
         name = FerrarioChristian
 [core]
         editor = nvim
-        autocrlf = true
+        ; autocrlf = true ; for Windows
+        ; autocrlf = input ; for MacOS and Linux
+        ; excludesfile = /Users/ferra/.gitignore_global ; contains .DS_Store
+
