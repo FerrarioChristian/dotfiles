@@ -3,6 +3,7 @@
 
 require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  'github/copilot.vim', -- GitHub Copilot
 
   -- require 'plugins.debug',
   -- require 'plugins.indent_line',
