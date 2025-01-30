@@ -1,4 +1,10 @@
 # Configuration dotfile
+## NeoVim
+
+### Step-by-step configuration
+1. Install [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+2. Copy the config from [here](https://github.com/FerrarioChristian/dotfiles/tree/master/.config/nvim) to ~/.config folder
+3. configure copilot
 
 ## TMUX
 Contains vim-tmux-navigator, Catppuccin theme and some miscellaneous settings.\
