@@ -4,11 +4,12 @@
 require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'github/copilot.vim', -- GitHub Copilot
+  'darfink/vim-plist', -- Plist support
 
   -- require 'plugins.debug',
   -- require 'plugins.indent_line',
   -- require 'plugins.lint',
-  -- require 'plugins.autopairs',
+  require 'plugins.autopairs',
   -- require 'plugins.neo-tree',
   -- require 'plugins.gitsigns',
 
@@ -19,7 +20,7 @@ require('lazy').setup({
   require 'plugins/lspconfig',
   require 'plugins/conform',
   require 'plugins/cmp',
-  require 'plugins/tokyonight',
+  require 'plugins/catppuccin',
   require 'plugins/todo-comments',
   require 'plugins/mini',
   require 'plugins/treesitter',

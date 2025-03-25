@@ -13,9 +13,9 @@ vim.opt.showmode = false
 
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
--- vim.schedule(function()
--- vim.opt.clipboard = 'unnamedplus'
--- end)
+vim.schedule(function()
+  vim.opt.clipboard = 'unnamedplus'
+end)
 
 -- Enable break indent
 vim.opt.breakindent = true
@@ -31,7 +31,7 @@ vim.opt.smartcase = true
 vim.opt.signcolumn = 'auto'
 
 -- Decrease update time
-vim.opt.updatetime = 1000
+vim.opt.updatetime = 2000
 
 -- Decrease mapped sequence wait time
 -- Displays which-key popup sooner
