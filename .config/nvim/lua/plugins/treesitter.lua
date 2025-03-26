@@ -6,7 +6,6 @@ return {
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = {
-        'java',
         'bash',
         'c',
         'diff',
