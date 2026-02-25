@@ -4,14 +4,13 @@
 require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'github/copilot.vim', -- GitHub Copilot
-  'darfink/vim-plist', -- Plist support
+  -- 'darfink/vim-plist', -- Plist support
 
-  -- require 'plugins.debug',
+  require 'plugins.debug',
   -- require 'plugins.indent_line',
-  -- require 'plugins.lint',
+  require 'plugins.lint',
   require 'plugins.autopairs',
-  -- require 'plugins.neo-tree',
-  -- require 'plugins.gitsigns',
+  require 'plugins.neo-tree',
 
   require 'plugins/vim-tmux-navigator',
   require 'plugins/gitsigns',
@@ -20,10 +19,14 @@ require('lazy').setup({
   require 'plugins/lspconfig',
   require 'plugins/conform',
   require 'plugins/cmp',
-  require 'plugins/catppuccin',
   require 'plugins/todo-comments',
   require 'plugins/mini',
   require 'plugins/treesitter',
+
+  -- require 'plugins.tokyonight',
+  require 'plugins/catppuccin',
+
+  require 'plugins/rustaceanvim',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

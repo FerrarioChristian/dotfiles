@@ -30,6 +30,9 @@ vim.opt.smartcase = true
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'auto'
 
+-- Raise dialog when unsaved changes
+vim.opt.confirm = true
+
 -- Decrease update time
 vim.opt.updatetime = 2000
 
@@ -53,6 +56,11 @@ vim.opt.inccommand = 'split'
 -- Show which line your cursor is on
 vim.opt.cursorline = true
 
+vim.o.shiftwidth = 4
+vim.o.tabstop = 4
+vim.o.expandtab = true
+vim.o.smartindent = true
+
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 15
 
@@ -68,5 +76,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+vim.o.foldmethod = 'expr'
+vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.o.foldenable = false
+vim.o.foldtext = ''
+vim.o.fillchars = 'fold: '
 
 -- vim: ts=2 sts=2 sw=2 et

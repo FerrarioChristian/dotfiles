@@ -33,11 +33,12 @@ return { -- Autoformat
     formatters_by_ft = {
       lua = { 'stylua' },
       go = { 'gofmt', 'goimports' },
-      -- Conform can also run multiple formatters sequentially
       python = { 'isort', 'black' },
-      --
-      -- You can use 'stop_after_first' to run the first available formatter from the list
-      -- javascript = { "prettierd", "prettier", stop_after_first = true },
+      ts = { 'biome', 'prettier', stop_after_first = true },
+      javascript = { 'biome', 'prettier', stop_after_first = true },
+      svelte = { 'prettier', stop_after_first = true },
+      css = { 'prettier', stop_after_first = true },
+      rust = { 'rustfmt' },
     },
   },
 }
