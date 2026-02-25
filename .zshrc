@@ -74,6 +74,7 @@ plugins=(
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	wd
+	rust
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -105,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-export PATH=/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/homebrew/bin:/opt/homebrew/bin:/usr/local/go/bin:$HOME/go/bin/
+export PATH=/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/homebrew/bin:/opt/homebrew/bin:/usr/local/go/bin:$HOME/go/bin/:$HOME/bin
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -117,5 +118,24 @@ alias vim="nvim"
 
 eval "$(oh-my-posh init zsh --config ~/.config/prompt-theme.omp.json)"
 
-alias python=python3.10
-alias pip=pip3.10
+export PATH='/Users/ferra/.duckdb/cli/latest':$PATH
+
+
+export PATH="/Users/ferra/Library/Python/3.9/bin:$PATH"
+alias python=python3.13
+alias pip=pip3.13
+
+export PATH="/Library/PostgreSQL/17/bin/:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export LAUNCH_EDITOR="$HOME/launch_editor_script"
+
+export PATH=$PATH:/Users/ferra/.local/bin
+
+# Added by Antigravity
+export PATH="/Users/ferra/.antigravity/antigravity/bin:$PATH"
+
+source "$HOME/.cargo/env"
