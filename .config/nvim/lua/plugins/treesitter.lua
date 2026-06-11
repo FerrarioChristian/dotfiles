@@ -8,6 +8,7 @@ return {
       ensure_installed = {
         'bash',
         'c',
+        'cpp',
         'diff',
         'html',
         'lua',
@@ -21,6 +22,7 @@ return {
         'gomod',
         'gowork',
         'gosum',
+        'java',
         'prisma',
         'json',
         'dockerfile',
@@ -43,6 +45,9 @@ return {
       },
       indent = { enable = true, disable = { 'ruby' } },
     },
+    -- Keymaps and other configuration can go here as well. See `:help nvim-treesitter` for more details.
+    vim.keymap.set('n', '<leader>ti', vim.show_pos, { desc = '[T]reesitter [I]nspect' }),
+    vim.keymap.set('n', '<leader>tt', vim.treesitter.inspect_tree, { desc = '[T]reesitter Inspect [T]ree' }),
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:
     --

@@ -7,7 +7,7 @@ require('lazy').setup({
   -- 'darfink/vim-plist', -- Plist support
 
   require 'plugins.debug',
-  -- require 'plugins.indent_line',
+  require 'plugins.indent_line',
   require 'plugins.lint',
   require 'plugins.autopairs',
   require 'plugins.neo-tree',

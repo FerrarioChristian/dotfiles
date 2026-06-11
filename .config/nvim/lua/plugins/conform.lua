@@ -39,6 +39,9 @@ return { -- Autoformat
       svelte = { 'prettier', stop_after_first = true },
       css = { 'prettier', stop_after_first = true },
       rust = { 'rustfmt' },
+      markdown = { 'markdownlint', stop_after_first = true },
+      latex = { 'tex-fmt' },
+      tex = { 'tex-fmt' },
     },
   },
 }
